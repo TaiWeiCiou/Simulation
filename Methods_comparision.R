@@ -24,14 +24,14 @@ source("C:/Users/user/Documents/Thesis/Oct_CodingSummary/Simulation/MCoptim.R",
        encoding = "utf-8")
 #source("F:/Oct_CodingSummary/Simulation/MCoptim.R")
 
-T0 =30;
-T_obs = T0+10;  N_ctrl = 10; N_x = 2
+T0 =20;
+T_obs = T0+10;  N_ctrl = 15; N_x = 2
 
 mseratiotable0 <- data.frame(matrix(0,21,3))
 mseratiotable <- data.frame(matrix(0,21,3))
 B = 1000
 loop = 0
-count = 1
+count = 1 
 set.seed(42)
 t0 <- Sys.time()
 
@@ -188,5 +188,5 @@ t1-t0
 
 View(mseratiotable)
 
-#write.csv(mseratiotable, "C:/Users/user/Documents/Thesis/Oct_CodingSummary/Simulation/simuresult/msetable_dgp5t30n10.csv")
+#write.csv(mseratiotable, "C:/Users/user/Documents/Thesis/Oct_CodingSummary/Simulation/simuresult/msetable_dgp5t20n15.csv")
 #write.csv(mseratiotable, "E:/Oct_CodingSummary/Simulation/simuresult/msetable_dgp5t20n10.csv")
